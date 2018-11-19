@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="141.0">blindsearch.BFS.Node</node>
+    <node x="0.0" y="281.0">blindsearch.BFS.Main</node>
+    <node x="232.0" y="141.0">blindsearch.BFS.BFS</node>
+    <node x="0.0" y="0.0">blindsearch.BFS.Graph</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="37.0" y="73.5" />
+  <SelectedNodes>
+    <node>blindsearch.BFS.BFS</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
