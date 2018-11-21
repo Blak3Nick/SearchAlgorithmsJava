@@ -1,5 +1,6 @@
 package blindsearch.BFS;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Node {
@@ -10,6 +11,7 @@ public class Node {
     public Node(Object object) {
         this.element = object;
         this.visited = false;
+        this.neighbors = new ArrayList<>();
     }
 
     public boolean isVisited() {
