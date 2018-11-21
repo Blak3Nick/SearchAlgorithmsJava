@@ -8,29 +8,39 @@ public class Node {
     private java.util.List<Node> neighbors;
 
     public Node(Object object) {
+        this.element = object;
+        this.visited = false;
     }
 
     public boolean isVisited() {
-        return false;
+
+        return this.visited;
     }
 
     public void addNeighbors(Node node) {
+        this.neighbors.add(node);
     }
 
     public Object getElement() {
-        return null;
+
+        return this.element;
     }
 
     public void setElement(Object object) {
+        this.element = object;
     }
 
+
     public void setVisited(boolean visited) {
+        this.visited = visited;
     }
 
     public List<Node> getNeighbors() {
-        return null;
+
+        return this.neighbors;
     }
 
     public void setNeighbors(List<Node> neighbors) {
+        this.neighbors = neighbors;
     }
 }
