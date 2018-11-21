@@ -4,15 +4,15 @@
   <OriginalElement />
   <nodes>
     <node x="0.0" y="0.0">blindsearch.BFS.Node</node>
-    <node x="0.0" y="437.0">blindsearch.BFS.Main</node>
-    <node x="272.0" y="296.0">blindsearch.BFS.BFS</node>
-    <node x="0.0" y="296.0">blindsearch.BFS.Graph</node>
+    <node x="0.0" y="482.0">blindsearch.BFS.Main</node>
+    <node x="272.0" y="318.0">blindsearch.BFS.BFS</node>
+    <node x="-263.0" y="91.0">blindsearch.BFS.Graph</node>
   </nodes>
   <notes />
   <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="212.0" y="166.0" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="212.0" y="166.5" />
   <SelectedNodes>
-    <node>blindsearch.BFS.Node</node>
+    <node>blindsearch.BFS.Graph</node>
   </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
