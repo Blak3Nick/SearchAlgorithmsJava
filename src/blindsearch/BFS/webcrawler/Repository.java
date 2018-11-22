@@ -1,7 +1,8 @@
 package blindsearch.BFS.webcrawler;
 
+import java.util.*;
 public class Repository {
-    private java.util.Queue<String> bfsQueue;
-    private java.util.Set<String> urlVisitedSet;
+    private Queue<String> bfsQueue;
+    private Set<String> urlVisitedSet;
     private int urlNo;
 }
