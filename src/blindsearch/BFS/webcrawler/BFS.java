@@ -68,6 +68,6 @@ public class BFS {
                 }
             }
         }
-        return null;
+        return this.repository.getUrlVisitedSet();
     }
 }
