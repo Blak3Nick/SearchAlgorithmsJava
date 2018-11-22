@@ -11,4 +11,11 @@ public class Repository {
         this.urlVisitedSet = new HashSet<>();
         this.urlNo = 0;
     }
+    public void addURLtoQueue(String url) {
+        bfsQueue.add(url);
+    }
+
+    public String removeURLfromQUEUE() {
+        return bfsQueue.poll();
+    }
 }
