@@ -25,4 +25,16 @@ public class Repository {
     public int getUrlNo() {
         return this.urlNo;
     }
+    public boolean isQueueEmpty() {
+        return this.bfsQueue.isEmpty();
+    }
+
+    public boolean setHasURL(String url) {
+        return this.urlVisitedSet.contains(url);
+    }
+    public Set<String> getUrlVisitedSet() {
+        return urlVisitedSet;
+    }
+
+
 }
