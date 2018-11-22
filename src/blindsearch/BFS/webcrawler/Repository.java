@@ -18,4 +18,11 @@ public class Repository {
     public String removeURLfromQUEUE() {
         return bfsQueue.poll();
     }
+    public void addURLtoSet(String url) {
+        urlVisitedSet.add(url);
+        this.urlNo ++;
+    }
+    public int getUrlNo() {
+        return this.urlNo;
+    }
 }
