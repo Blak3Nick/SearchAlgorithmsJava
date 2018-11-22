@@ -15,11 +15,11 @@ public class BFS {
 
 
 
-    public BFS(String firstURL, int maximumURLNo, String urlPatterns, Repository repository) {
+    public BFS(String firstURL, int maximumURLNo, String urlPatterns ) {
         this.firstURL = firstURL;
         this.maximumURLNo = maximumURLNo;
         this.urlPatterns = urlPatterns;
-        this.repository = repository;
+        this.repository =  new Repository();
     }
     public Set<String> bfs() throws IOException{
         repository.addURLtoSet(this.firstURL);
@@ -36,18 +36,12 @@ public class BFS {
             while ( correctURLFound == false) {
                 try {
                     url = new URL(currentURL);
-                    try {
-                         bufferedReader = new BufferedReader(new InputStreamReader(url.openStream()));
-                    }catch (IOException e) {
+                    bufferedReader = new BufferedReader(new InputStreamReader(url.openStream()));
+                    correctURLFound = true;
+                }catch (IOException e) {
                         System.out.println("Error in buffered reader " + e.getMessage() + currentURL);
                         e.printStackTrace();
                     }
-                    correctURLFound = true;
-                } catch (MalformedURLException e) {
-                    System.out.println("Error in url " + e.getMessage() + currentURL);
-                    e.printStackTrace();
-                }
-
             }
             StringBuilder stringBuilder = new StringBuilder();
 
