@@ -27,7 +27,24 @@ public class BFS {
             if (repository.getUrlNo() > this.maximumURLNo) {
                 return this.repository.getUrlVisitedSet();
             }
+            boolean correctURL = false;
+            URL url = null;
+            BufferedReader bufferedReader = null;
 
+            while ( correctURL == false) {
+                try {
+                    url = new URL(currentURL);
+                    try {
+                        bufferedReader = new BufferedReader(new InputStreamReader(url.openStream()));
+                    }catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                }
+
+            }
         }
         return null;
     }
